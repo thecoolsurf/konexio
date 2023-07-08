@@ -1,0 +1,327 @@
+/* 
+    Created on : 5 juil. 2023, 21:14:40
+    Author     : hdouin
+*/
+
+@font-face {
+    font-family:'New-York';
+    src: url('../fonts/New_york_4/NEW YORK.otf')  format('opentype'),
+        url('../fonts/new-york_4/NEW YORK.ttf')  format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@keyframes slide-left {
+    from {
+        left:52%;
+        z-index:2;
+    }
+    to {
+        left:46%;
+        z-index:1;
+    }
+}
+@keyframes slide-right {
+    from {
+        right:52%;
+        z-index:2;
+    }
+    to {
+        right:48%;
+        z-index:1;
+    }
+}
+
+/* ************************************************************************************************** */
+
+body {
+    background: #6c6c6c;
+}
+.hidden {
+    display: none;
+}
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.container-fluid {
+    float: left;
+}
+
+#header {
+    background: #6c6c6c;
+    padding: 20px;
+}
+#header header {
+    width: 100%;
+}
+#logo {
+    display: block;
+    width: 180px;
+    height: 60px;
+}
+#logo a {
+    text-decoration: none;
+}
+#left, #right {
+    float:left;
+    box-sizing:border-box;
+}
+#haut {
+    background:#000;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    z-index:5;
+    display:none;
+    width:46px;
+    height:46px;
+    font-size:40px;
+    line-height:45px;
+    color:#FFF;
+    text-align:center;
+    cursor:pointer;
+    border-radius:50%;
+}
+#haut:hover {
+    background:#FFF;
+    color:#000;
+}
+/* ************************************************************************************************** */
+#navigation {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+#navigation #navig {
+    background: #555;
+    float: left;
+    height: 35px;
+    padding: 0px 10px 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#navigation #navig .fa {
+    margin: -5px 0 0 0;
+    line-height: 10px;
+}
+#navigation .close {
+    display: none;
+    background: #555;
+    position: relative;
+    float: left;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: normal;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+#navigation .legend {
+    float: left;
+    padding: 10px 0 0 10px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    box-sizing: border-box;
+}
+#menu {
+    text-align: right;
+}
+#menu .item {
+    color: #FFF;
+    text-decoration: none;
+    font-size:1em;
+    line-height:1.4;
+}
+#menu .item:hover {
+    color: #33ccff;
+}
+
+/* ************************************************************************************************** */
+
+.bkg-swimming-pool {
+    background-image: url('../images/bkg-swimming-pool.jpg');
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.swimming-pool {
+    text-align: center;
+}
+.swimming-pool h1 {
+    margin: 40px 0 10px 0;
+    font-family: 'New-York', sans-serif;
+    font-size: 5em;
+    line-height: 1;
+    color: #FFF;
+}
+.swimming-pool h2 {
+    margin: 0 0 40px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #FFF;
+}
+.subscribe-discover {
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    text-align: center;
+}
+.subscribe-discover button {
+    position: absolute;
+    top: 0px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.subscribe-discover .subscribe {
+    right: 52%;
+    border: solid 4px #000;
+    background: #33ccff;
+    padding: 10px 80px;
+    color: #000;
+}
+.subscribe-discover .subscribe:hover {
+    z-index: 1;
+    right:48%;
+    background: #c7254e;
+    color:  #000;
+    animation: 0.5s linear 0s 1 slide-right;
+}
+.subscribe-discover .discover {
+    border: solid 4px #FFF;
+    background:none;
+    padding: 10px 40px;
+    color: #FFF;
+}
+.subscribe-discover .discover:hover {
+    z-index: 1;
+    left: 46%;
+    background: #c7254e;
+    animation: 0.5s linear 0s 1 slide-left;
+}
+
+.informations {
+    text-align: center;
+    color: #FFF;
+}
+.informations h4  {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.informations a {
+    display: inline-block;
+    color: #FFF;
+}
+.informations a:hover {
+    color: #000;
+}
+.informations .icon-team, .informations .icon-diploma , .informations .icon-morpion  {
+    background-size: 100% auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+    color: #FFF;
+}
+.informations .icon-team {
+    background-image: url('../images/team.png');
+    background-size: auto 90%;
+    background-position: center top;
+}
+.informations .icon-diploma {
+    background-image: url('../images/studies.png');
+    background-size: 100% auto;
+    background-position: center center;
+}
+.informations .icon-morpion {
+    background-image: url('../images/morpion.png');
+    background-size: auto 100%;
+    background-position: center top;
+}
+
+/* ************************************************************************************************** */
+
+.gaming {
+    background: #33ccff;
+    width: 100%;
+    padding: 20px 30px;
+}
+#Jeu {
+    background-color: #000;
+    padding: 5px;
+}
+#reset {
+    background: #33bde4;
+    font-size: 16px;
+    line-height: 18px;
+    width: 100px;
+    height: 30px;
+    margin: 0 0 20px 0;
+    border: none;
+    border-radius: 10px;
+}
+#reset:hover {
+    background: #FFF;
+}
+#Jeu div {
+    margin: 0 auto;
+    overflow: hidden;
+}
+#Jeu .btn-game {
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 5px;
+    float:left;
+    border: none;
+}
+#StatutJeu {
+    padding: 10px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+}
+#text-game {
+    display: block;
+    max-width: 1000px;
+}
+#text-game h3 {
+    margin: 0 0 10px 0;
+    font-family: 'New-York', sans-serif;
+    font-size: 2.25em;
+}
+#text-game p {
+    margin: 0 0 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+}
+
+.container-footer {
+    background: #111;
+    color: #FFF;
+    margin: 0 0 1000px 0;
+}
+.container-footer footer {
+    text-align: center;
+}
+.container-footer .bracket {
+    font-size: 60px;
+    line-height: 60px;
+}
