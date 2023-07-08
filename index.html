@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="test de mise en page html css javascript">
+        <meta name="author" content="Hubert DOUIN">
+        <title>Konexio | test formation</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+        <link rel="stylesheet" href="/bootstrap-5.3.0/assets/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Poppins'>
+        <link rel="stylesheet" href="/style/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/style/css/caneva.css">
+        <link rel="stylesheet" id="media" href="/style/css/default.css">
+
+        <script type="text/javascript" src="/src/js/tools.js"></script>
+
+    </head>
+
+    <body>
+        <div id="backtop"></div>
+        <a id="haut" style="" href="#backtop"><i class="fa fa-arrow-up"></i></a>
+        <div id="navigation" style="">
+            <div id="navig" style=""><i class="fa fa-bars"></i></div>
+            <div class="close" style=""><i class="fa fa-times"></i></div>
+            <div class="legend">MENUS</div>
+        </div>
+        <!-- headers -->
+        <div id="header" class="container-fluid container-header">
+            <header>
+                <div id="left">
+                    <a id="logo" title="Home" href="http://konexio.local/" target="_blank">
+                        <img alt="Konexio" src="/style/images/konexio-blanc.png" width="100%" height="auto" />
+                    </a>
+                </div>
+                <div id="right">
+                    <div id="menu" class="menu">
+                        <a href="#swimming-pool" class="item" id="item-1">A propos</a>
+                        <a href="#gaming" class="item" id="item-2">Exercices</a>
+                        <a href="#informations" class="item" id="item-3">Equipe</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- section swimming-pool -->
+        <div id="swimming-pool" class="container-fluid bkg-swimming-pool">
+            <section class="swimming-pool">
+                <div class="container">
+                    <h1>Plonger dans le bootcamp</h1>
+                    <h2>Apprenez à nager à travers <br>
+                        html/css, Javascript, React, PHP, Symphony et MySQL et <br>
+                        devenez le meilleur développeur web du monde !</h2>
+                </div>
+            </section>
+            <section class="subscribe-discover">
+                <button id="subscribe" class="subscribe">Postuler</button>
+                <button id="discover" class="discover">Découvrir</button>
+            </section>
+            <section id="informations" class="informations">
+                <div class="row">
+                    <div class="col-sm">
+                        <a class="text-decoration-none" href="#backtop" title="Equipe">
+                            <div class="icon-team"></div>
+                            <h4>Equipe</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a class="text-decoration-none" href="#backtop" title="Diplomante">
+                            <div class="icon-diploma"></div>
+                            <h4>Diplomante</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a class="text-decoration-none" href="#backtop" title="Morpion">
+                            <div class="icon-morpion"></div>
+                            <h4>Morpion</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- section game -->
+        <div  id="gaming" class="container-fluid gaming">
+            <section>
+                <div id="Jeu">
+                    <div>
+                        <button id="btn-0" class="btn-game"></button>
+                        <button id="btn-1" class="btn-game"></button>
+                        <button id="btn-2" class="btn-game"></button>
+                    </div>
+                    <div>
+                        <button id="btn-3" class="btn-game"></button>
+                        <button id="btn-4" class="btn-game"></button>
+                        <button id="btn-5" class="btn-game"></button>
+                    </div>
+                    <div>
+                        <button id="btn-6" class="btn-game"></button>
+                        <button id="btn-7" class="btn-game"></button>
+                        <button id="btn-8" class="btn-game"></button>
+                    </div>
+                    <div id="StatutJeu">
+                    </div>
+                    <div class="align-center">
+                        <button id="reset" class="hidden">Rejouez !</button>
+                    </div>
+                </div>
+                <div id="text-game">
+                    <h3>Essayez le morpion !</h3>
+                    <p>Pour jouer une partie de morpion, il suffit de tracer sur une feuille blanche une grille de 3 cases sur 3 (selon les variantes, il est possible d'augmenter le nombre de cases). 
+                        Le but du jeu est d'aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale. 
+                        Chaque joueur a donc son propre symbole, généralement une croix pour l'un et un rond pour l'autre. 
+                        La partie se termine quand l'un des joueurs a aligner 3 symboles ou quand la grille est complétée sans vainqueur. Il y a alors égalité.</p>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid container-footer">
+            <footer class="my-4">
+                <div class="row">
+                    <div class="col bracket align-right">{</div>
+                    <div class="col-4">
+                        <div class="nav-item">Konexio</div>
+                        <div class="nav-item">Faire du numérique une opportunité pour tous.tes</div>
+                    </div>
+                    <div class="col bracket align-left">}</div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="/src/js/default.js"></script>
+        <script type="text/javascript" src="/src/js/morpion.js"></script>
+    </body>
+</html>
